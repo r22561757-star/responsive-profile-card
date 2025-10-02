@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rudransh Gupta Portfolio</title>
+    <style>
+      
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: linear-gradient(135deg, #0a0a30 0%, #1a1a4f 100%);
+            color: #f6fafd;
+            font-family: 'Poppins', sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 90px;
+            background-color: #191932;
+            padding: 0 50px;
+            box-shadow: 0 2px 10px rgba(16,26,53, 0.3);
+        }
+
+        .left {
+            font-size: 2.2rem;
+            font-weight: bold;
+            color: #fff;
+            letter-spacing: 2px;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 30px;
+        }
+
+        nav ul li a {
+            font-size: 1.2rem;
+            color: #e9f1fc;
+            text-decoration: none;
+            padding: 8px 16px;
+            border-radius: 6px;
+            transition: background 0.2s, color 0.2s;
+        }
+
+        nav ul li a:hover {
+            background: #2bc6d4;
+            color: #161639;
+        }
+
+       
+        .firstSection {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 70px auto 200px auto;
+            padding: 40px 20px;
+            gap: 250px;
+            max-width: 1200px;
+            flex-wrap: wrap;
+        }
+
+        .leftSection {
+            font-size: 2.2rem;
+            flex: 1 1 320px;
+            min-width: 300px;
+            max-width: 600px;
+        }
+
+        .leftSection .purple {
+            color: #2bc6d4;
+            font-size: 3.0rem;
+            display: block;
+            margin-bottom: 16px;
+            font-weight: 600;
+        }
+
+        .leftSection div {
+            font-size: 1.65rem;
+            margin-top: 30px;
+            line-height: 1.6;
+            color: #c5d8e5;
+           
+        }
+
+        .rightSection {
+            flex: 1 1 240px;
+            min-width: 240px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .rightSection img {
+            width: 100%;
+            max-width: 350px;
+            border-radius: 20px;
+            box-shadow: 0 0 32px rgba(43,198,212,0.17), 0 4px 10px rgba(20, 36, 70, 0.34);
+            border: 4px solid #2bc6d4;
+        }
+
+       
+        #about {
+            padding: 60px 25px;
+            max-width: 1200px;
+            margin: 40px auto 250px auto;
+            background: rgba(23, 35, 80, 0.7);
+            border-radius: 14px;
+            border-left: 4px solid #2bc6d4;
+        }
+
+        #about h2 {
+            font-size: 2.1rem;
+            margin-bottom: 50px;
+            color: #2bc6d4;
+        }
+
+        #about p {
+            font-size: 1.18rem;
+            line-height: 1.8;
+            color: #d8e7ef;
+            width: auto;
+        }
+
+       
+        #projects {
+            padding: 60px 25px;
+            max-width: 1100px;
+            margin: 45px auto;
+        }
+
+        #projects h2 {
+            font-size: 4rem;
+            margin-bottom: 60px;
+            color: #2bc6d4;
+        }
+      .cards {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 50px;
+            justify-content: center;
+            margin-bottom: 100px;
+        }
+
+        .card {
+            background: linear-gradient(120deg, #191932 70%, #243045 100%);
+            padding: 24px 20px;
+            border-radius: 14px;
+            min-width: 220px;
+            width: 280px;
+            box-shadow: 0 4px 16px rgba(20, 36, 70, 0.15);
+            transition: transform 0.2s, box-shadow 0.2s;
+            border: 1.5px solid #2bc6d4;
+        }
+
+        .card:hover {
+            transform: translateY(-7px) scale(1.02);
+            box-shadow: 0 8px 24px rgba(43,198,212, 0.19);
+        }
+
+        .card h3 {
+            color: #47cafa;
+            margin-bottom: 8px;
+            font-size: 1.23rem;
+        }
+
+        .card p {
+            color: #f3efe7;
+            font-size: 1rem;
+            line-height: 1.5;
+        }
+
+        
+        #contact {
+            padding: 56px 20px;
+            background: linear-gradient(120deg, #162142 80%, #2bc6d4 180%);
+            
+            margin-top: 48px;
+            margin: 0px;
+        }
+
+        #contact h2 {
+            font-size: 2.7rem;
+            color: #fff;
+            margin-bottom: 20px;
+            padding: 30px;
+        }
+
+        #contact p {
+            font-size: 1.6rem;
+            margin-bottom: 0px;
+            color: #e6f1fa;
+            padding: 30px;
+        }
+section {
+    margin: 60px 0;
+    padding: 50px 20px;
+}
+
+        #contact a {
+            color: #191932;
+            background: #2bc6d4;
+            padding: 6px 16px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: background 0.2s, color 0.2s;
+        }
+
+        #contact a:hover {
+            background: #188199;
+            color: #fff;
+        }
+
+        .socials {
+            margin-top: 38px;
+        }
+
+        .socials a {
+            margin: 0 13px;
+            display: inline-flex;
+            align-items: center;
+            color: #134d60;
+            font-size: 1.01rem;
+            transition: color 0.2s;
+        }
+
+        .socials a:hover {
+            color: #2bc6d4;
+        }
+
+        .icon {
+            width: 22px;
+            height: 22px;
+            margin-right: 6px;
+            filter: invert(70%) sepia(17%) saturate(443%) hue-rotate(186deg) brightness(90%) contrast(90%);
+        }
+
+       
+        footer {
+            text-align: center;
+            
+            background-color: #191932;
+            color: #e8e8e8;
+            font-size: 1.2rem;
+            letter-spacing: 2px;
+            margin-top: 0;
+            padding: 60px;
+
+        }
+
+       
+        @media (max-width: 900px) {
+            nav {
+                padding: 0 10vw;
+            }
+            .firstSection {
+                flex-direction: column;
+                text-align: center;
+                gap: 30px;
+            }
+            .rightSection, .leftSection {
+                max-width: 98vw;
+            }
+            .cards {
+                gap: 22px;
+            }
+        }
+        @media (max-width: 600px) {
+            nav {
+                flex-direction: column;
+                height: auto;
+                padding: 10px 10vw;
+            }
+            .left {
+                font-size: 1.35rem;
+            }
+            .firstSection {
+                margin: 15px 0 25px 0;
+                padding: 24px 3vw;
+            }
+            #about, #projects, #contact {
+                padding: 32px 5vw;
+            }
+            .card {
+                min-width: 90vw;
+                max-width: 95vw;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="left" id = "home">Rudransh Gupta</div>
+            <div class="right">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main> 
+        <section class="firstSection" >
+            <div class="leftSection">
+                <span class="purple">Hi, I'm Rudransh</span>
+                <div>
+                    A passionate Frontend Developer who loves building responsive, user-friendly web interfaces with HTML and CSS. I enjoy turning ideas into beautiful, interactive experiences on the web.
+                </div>
+            </div>
+            <div class="rightSection">
+                <img src="index.html file.jpeg" alt="">
+            </div>
+        </section>
+        <section id="about">
+            <h2>About Me</h2>
+            <p>
+                I'm from Mandi Gobindgarh. I'm passionate about coding and love building things that live on the web. When I'm not in front of a screen, you’ll probably find me playing sports or learning something new in tech. I enjoy solving problems through code and am always looking to improve my skills and take on new challenges.
+            </p>
+        </section>
+        <section id="projects">
+            <h2>Highlighted Projects</h2>
+            <div class="cards">
+                <div class="card">
+                    <h3>Project 1</h3>
+                    <p>coming soon</p>
+                </div>
+                <div class="card">
+                    <h3>Project 2</h3>
+                    <p>coming soon</p>
+                </div>
+                <div class="card">
+                    <h3>Project 3</h3>
+                    <p>coming soon</p>
+                </div>
+            </div>
+        </section>
+        <section id="contact" class="boxed-section">
+            <h2>Contact</h2>
+            <p>I'm always open to new opportunities, collaborations, or just a friendly chat about tech and coding.</p>
+            <p>Email: <a href="mailto:guptarudransh63@gmail.com">guptarudransh63@gmail.com</a></p>
+            <p class="socials">
+                <a href="https://www.linkedin.com/in/rudransh-gupta-a2ba6537b/" target="_blank">
+                    <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/linkedin.svg" alt="LinkedIn" class="icon"> LinkedIn
+                </a>
+                <span>|</span>
+                <a href="https://github.com/r22561757-star" target="_blank">
+                    <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/github.svg" alt="GitHub" class="icon"> GitHub
+                </a>
+            </p>
+        </section>
+        <footer>
+            <p>© RUDRANSH GUPTA</p>
+            <p>Built using HTML and CSS</p>
+        </footer>
+        
+        
+    </main>
+</body>
+</html>
